@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend Test - Reflektive</title>
+        <style>
+            body {
+                font-family: Tahoma, Verdana, Arial;
+                font-size: 12px;
+            }
+            ul > li {
+                margin-top: 5px;
+            }
+            pre {
+                padding: 2px 4px;
+                border: 1px solid #dddddd;
+                background: #eeeeee;
+                display: inline-block;
+                margin: 0px;
+                color: #01639c;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Steps to start the server</h2>
+            <ul>
+                <li>Install node and npm (in case if you haven't).</li>
+                <li>Open terminal and navigate to the folder and execute below commands.</li>
+                <li><pre>npm install</pre></li>
+                <li><pre>mockserver -p 9000 -m mocks</pre></li>
+                <li>That should start a mock server and should show as below.</li>
+                <li><pre>Mockserver serving mocks {verbose:true} under "mocks" at http://localhost:9000</pre></li>
+                <li>change the port number in case if you are using <pre>9000</pre> for anything else.</li>
+            </ul>
+
+            <h2>Now you can do following API calls:</h2>
+            <ul>
+                <li><pre>GET - http://localhost:9000/goals</pre> - gets all the goals</li>
+                <li><pre>POST - http://localhost:9000/goals</pre> - creates a goal</li>
+                <li><pre>DELETE - http://localhost:9000/goals</pre> - deletes a goal</li>
+            </ul>
+        </div>
+    </body>
+</html>
